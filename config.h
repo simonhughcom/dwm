@@ -14,15 +14,22 @@ static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#964b00";
+static const char col_black[]       = "#000000";
+static const char col_red[]         = "#ff0000";
+static const char col_yellow[]      = "#ffff00";
+static const char col_white[]       = "#ffffff";
+
 static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	/*                  fg              bg          border   */
+	[SchemeNorm]    =   { col_gray3,    col_gray1,  col_gray2 },
+	[SchemeSel]     =   { col_gray4,    col_cyan,   col_cyan  },
+	[SchemeWarn]    =   { col_black,    col_yellow, col_red },
+	[SchemeUrgent]  =   { col_white,    col_red,    col_red },
 };
 
 #define NUMCOLORS         4
 static const char colors[NUMCOLORS][MAXCOLORS][8] = {
-	// border   foreground background
+	// border    foreground background
 	{ "#000033", "#dddddd", "#000033" },  // normal
 	{ "#000088", "#ffffff", "#000088" },  // selected
 	{ "#ff0000", "#000000", "#ffff00" },  // urgent/warning  (black on yellow)
