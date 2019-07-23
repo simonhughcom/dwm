@@ -20,6 +20,16 @@ static const char *colors[][3]      = {
 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
 };
 
+#define NUMCOLORS         4
+static const char colors[NUMCOLORS][MAXCOLORS][8] = {
+	// border   foreground background
+	{ "#000033", "#dddddd", "#000033" },  // normal
+	{ "#000088", "#ffffff", "#000088" },  // selected
+	{ "#ff0000", "#000000", "#ffff00" },  // urgent/warning  (black on yellow)
+	{ "#ff0000", "#ffffff", "#ff0000" },  // error (white on red)
+	// add more here
+};
+
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "", "", "" };
 
