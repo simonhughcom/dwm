@@ -28,9 +28,9 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     iscenterd   isfloating  monitor */
-	{ "mpv",      NULL,       NULL,       1 << 9,       0,          0,          -1 },
-	{ "newsboat", NULL,       NULL,       1 << 10,      0,          0,          -1 },
-	{ "htop",     NULL,       NULL,       1 << 11,      0,          0,          -1 },
+	{ "mpv",      NULL,       NULL,       1 << 10,       0,          0,          -1 },
+	{ "newsboat", NULL,       NULL,       1 << 11,      0,          0,          -1 },
+	{ "htop",     NULL,       NULL,       1 << 12,      0,          0,          -1 },
 };
 
 /* layout(s) */
