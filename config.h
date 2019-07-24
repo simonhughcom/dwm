@@ -13,18 +13,27 @@ static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#964b00";
+static const char col_orange[]        = "#964b00";
 static const char col_black[]       = "#000000";
 static const char col_red[]         = "#ff0000";
 static const char col_yellow[]      = "#ffff00";
 static const char col_white[]       = "#ffffff";
+static const char col_yellow2[]     = "#b29f27";
+static const char col_blue2[]       = "#61AEEE";
+static const char col_pink[]        = "#F79494";
+static const char col_green[]       = "#98C379";
+static const char col_yellow3[]     = "#c0c000";
 
 static const char *colors[][3]      = {
-	/*                  fg              bg          border   */
-	[SchemeNorm]    =   { col_gray3,    col_gray1,  col_gray2 },
-	[SchemeSel]     =   { col_gray4,    col_cyan,   col_cyan  },
-	[SchemeWarn]    =   { col_black,    col_yellow, col_red },
-	[SchemeUrgent]  =   { col_white,    col_red,    col_red },
+	/*                      fg                  bg              border   */
+	[SchemeNorm]        =   { col_gray3,        col_gray1,      col_gray2 },
+	[SchemeSel]         =   { col_gray4,        col_orange,     col_orange  },
+	[SchemeWarn]        =   { col_black,        col_yellow,     col_gray2 },
+	[SchemeUrgent]      =   { col_white,        col_red,        col_gray2 },
+	[SchemeUpdate]      =   { col_yellow2,      col_gray1,      col_gray2 },
+	[SchemeTime]        =   { col_blue2,        col_gray1,      col_gray2 },
+	[SchemeDate]        =   { col_pink,         col_gray1,      col_gray2 },
+	[SchemeMemory]      =   { col_yellow3,      col_gray1,      col_gray2 },
 };
 
 
@@ -67,7 +76,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_orange, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "st", NULL };
 
 static Key keys[] = {
