@@ -47,10 +47,10 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance    title       tags mask     iscenterd   isfloating  monitor */
-	{ "mpv",      NULL,       NULL,       1 << 10,       0,          0,          -1 },
-	{ "newsboat", NULL,       NULL,       1 << 11,      0,          0,          -1 },
-	{ "htop",     NULL,       NULL,       1 << 12,      0,          0,          -1 },
+	/* class    instance      title   tags mask  iscent. isfloat. monitor */
+	{ "mpv",    NULL,         NULL,   1 << 10,   0,      0,       -1 },
+	{ "St",     "newsboat",   NULL,   1 << 11,   0,      0,       -1 },
+	{ "St",     "htop",       NULL,   1 << 12,   0,      0,       -1 },
 };
 
 /* layout(s) */
