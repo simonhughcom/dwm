@@ -29,7 +29,7 @@ static const char *colors[][3]      = {
 	/*                      fg                  bg              border    */
 	[SchemeNorm]        =   { col_orange2,      col_gray1,      col_gray2  },
 	[SchemeSel]         =   { col_gray4,        col_orange,     col_orange },
-	//[SchemeTitle]       =   { col_orange2,      col_gray1,      col_gray2  },
+	[SchemeTitle]       =   { col_orange2,      col_gray1,      col_gray2  },
 };
 
 
