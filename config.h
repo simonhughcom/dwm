@@ -14,6 +14,7 @@ static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_orange[]      = "#c25704";
+static const char col_orange2[]     = "#c25704";
 static const char col_black[]       = "#000000";
 static const char col_red[]         = "#ff0000";
 static const char col_yellow[]      = "#ffff00";
@@ -25,16 +26,16 @@ static const char col_green[]       = "#98C379";
 static const char col_yellow3[]     = "#c0c000";
 
 static const char *colors[][3]      = {
-	/*                      fg                  bg              border   */
-	[SchemeNorm]        =   { col_gray3,        col_gray1,      col_gray2 },
-	[SchemeSel]         =   { col_gray4,        col_orange,     col_orange  },
-	[SchemeTitle]       =   { col_gray3,        col_gray1,      col_gray2 },
-	[SchemeWarn]        =   { col_black,        col_yellow,     col_gray2 },
-	[SchemeUrgent]      =   { col_white,        col_red,        col_gray2 },
-	[5]      =   { col_yellow2,      col_gray1,      col_gray2 },
-	[6]        =   { col_blue2,        col_gray1,      col_gray2 },
-	[7]        =   { col_pink,         col_gray1,      col_gray2 },
-	[8]      =   { col_yellow3,      col_gray1,      col_gray2 },
+	/*                      fg                  bg              border    */
+	[SchemeNorm]        =   { col_orange2,      col_gray1,      col_gray2  },
+	[SchemeSel]         =   { col_gray4,        col_orange,     col_orange },
+	[SchemeTitle]       =   { col_orange2,      col_gray1,      col_gray2  },
+	[SchemeWarn]        =   { col_black,        col_yellow,     col_gray2  },
+	[SchemeUrgent]      =   { col_white,        col_red,        col_gray2  },
+	[5]                 =   { col_yellow2,      col_gray1,      col_gray2  },
+	[6]                 =   { col_blue2,        col_gray1,      col_gray2  },
+	[7]                 =   { col_pink,         col_gray1,      col_gray2  },
+	[8]                 =   { col_yellow3,      col_gray1,      col_gray2  },
 };
 
 
